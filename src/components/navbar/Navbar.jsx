@@ -12,11 +12,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="lg:flex lg:justify-between lg:items-center lg:px-8 p-3 lg:p-0 lg:py-3 border-b-2 border-orange-400 mb-4">
+    <div className="lg:flex lg:justify-between lg:items-center lg:px-8 p-3 lg:p-0 lg:py-3 border-b-2 border-sky-400 mb-4">
       <Link to={"/"}>
         <p>
           <span className="text-5xl font-bold">
-            F<span className="font-extrabold text-orange-400">oo</span>d
+            F<span className="font-extrabold text-sky-400">oo</span>d
           </span>
           <span className="text-2xl">City</span>
         </p>
@@ -28,7 +28,7 @@ const Navbar = () => {
             to={"/"}
             className={({ isActive }) =>
               isActive
-                ? "font-bold lg:text-2xl duration-300 text-orange-400"
+                ? "font-bold lg:text-2xl duration-300 text-sky-400"
                 : "font-bold text-lg"
             }
           >
@@ -41,7 +41,7 @@ const Navbar = () => {
             to={"/about"}
             className={({ isActive }) =>
               isActive
-                ? "font-bold text-2xl duration-300 text-orange-400"
+                ? "font-bold text-2xl duration-300 text-sky-400"
                 : "font-bold text-lg"
             }
           >
@@ -54,7 +54,7 @@ const Navbar = () => {
             to={"/blog"}
             className={({ isActive }) =>
               isActive
-                ? "font-bold text-2xl duration-300 text-orange-400"
+                ? "font-bold text-2xl duration-300 text-sky-400"
                 : "font-bold text-lg"
             }
           >
@@ -77,13 +77,13 @@ const Navbar = () => {
         {user ? (
           <button
             onClick={handleLogOut}
-            className="bg-orange-400 font-bold text-black btn border-none text-lg rounded hover:bg-orange-400"
+            className="bg-sky-400 font-bold text-black btn border-none text-lg rounded hover:bg-sky-400"
           >
             logOut
           </button>
         ) : (
           <Link to={"/login"}>
-            <button className="bg-orange-400 font-bold text-black btn border-none text-lg rounded hover:bg-orange-400">
+            <button className="bg-sky-400 font-bold text-black btn border-none text-lg rounded hover:bg-sky-400">
               login
             </button>
           </Link>

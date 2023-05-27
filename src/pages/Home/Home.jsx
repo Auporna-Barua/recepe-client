@@ -27,7 +27,7 @@ const Home = () => {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <button className="btn btn-square loading bg-white border-none text-orange-400 font-bold"></button>
+        <button className="btn btn-square loading bg-white border-none text-sky-400 font-bold text-lg"></button>
       </div>
     );
   }
@@ -38,11 +38,11 @@ const Home = () => {
         <img className="lg:w-full lg:h-3/4 relative" src={bannerImg} alt="" />
         <div className="absolute lg:top-52 top-72 lg:left-16 left-10">
           <p className="font-bold lg:text-6xl text-3xl leading-tight">
-            <span className="text-orange-400">choose</span> better Food <br />
+            <span className="text-sky-400">choose</span> better Food <br />
             choose better Life..!
           </p>
           <div className="mt-4">
-            <button className="btn text-black font-bold text-xl bg-orange-400 border-none hover:bg-orange-400">
+            <button className="btn text-white font-bold text-xl bg-sky-400 border-none hover:bg-sky-400">
               Explore More{" "}
               <FaAngleDoubleRight className="ms-3"></FaAngleDoubleRight>
             </button>
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-11/12 mx-auto">
-        <p className="text-5xl font-bold mt-10 text-center  border-b-4 border-orange-400 w-fit mx-auto p-3">
+        <p className="text-5xl font-bold mt-10 text-center  border-b-4 border-sky-400 w-fit mx-auto p-3">
           The Chef's
         </p>
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 mt-10">

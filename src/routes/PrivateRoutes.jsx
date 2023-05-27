@@ -9,7 +9,7 @@ const PrivetRoute = ({ children }) => {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <button className="btn btn-square loading bg-white border-none text-orange-400 font-bold"></button>
+        <button className="btn btn-square loading bg-white border-none text-sky-400 font-bold"></button>
       </div>
     );
   }

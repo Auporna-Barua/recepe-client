@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import ChefRecipe from "../pages/ChefRecefies/ChefRecipes";
 
 import ErrorPage from "../pages/ErrorPage";
+import Login from "../pages/Login/Login";
 // import PrivetRoute from "./PrivetRoute";
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       fetch(
         `https://food-city-server-hridoy-shill.vercel.app/recipes/${params.id}`
       ),
+  },
+
+  {
+    path: "/login",
+    element: <Login></Login>,
   },
 ]);
 

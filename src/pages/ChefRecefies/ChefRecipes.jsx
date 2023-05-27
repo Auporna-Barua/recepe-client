@@ -18,7 +18,7 @@ const ChefRecipes = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="card lg:card-side bg-opacity-40 mx-8 my-3 mt-20 shadow-lg border-black p-5 bg-orange-400">
+      <div className="card lg:card-side bg-opacity-40 mx-8 my-3 mt-20 shadow-lg border-black p-5 bg-sky-400">
         <div className="w-full mt-10 p-5">
           <h2 className="card-title text-4xl font-bold border-b-2 border-black">
             {ChefName}
@@ -34,7 +34,7 @@ const ChefRecipes = () => {
         </div>
         <div className="w-full">
           <img
-            className="border-8 border-orange-400 rounded"
+            className="border-8 border-sky-400 rounded"
             src={ChefPicture}
             alt="Album"
           />
@@ -42,7 +42,7 @@ const ChefRecipes = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-3 mx-8">
-        <p className="text-4xl font-bold border-b-4 border-orange-400 pb-2 w-fit mx-auto mt-10">
+        <p className="text-4xl font-bold border-b-4 border-sky-400 pb-2 w-fit mx-auto mt-10">
           Recipes
         </p>
         {recipes.map((recipe) => (

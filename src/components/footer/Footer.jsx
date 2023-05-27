@@ -32,15 +32,15 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title">Social</span>
-          <div className="flex space-x-4 border-l-2 border-orange-400 p-2">
+          <div className="flex space-x-4 border-l-2 border-sky-400 p-2">
             <FaGoogle className="font-bold text-xl"></FaGoogle>
             <FaFacebook className="font-bold text-xl"></FaFacebook>
             <FaTwitter className="font-bold text-xl"></FaTwitter>
           </div>
-          <p className="flex items-center font-bold text-lg text-orange-400 mt-3 border-l-2 border-orange-400 p-2">
+          <p className="flex items-center font-bold text-lg text-sky-400 mt-3 border-l-2 border-sky-400 p-2">
             <FaPhone className="text-white me-2"></FaPhone>+958-520-222
           </p>
-          <p className="flex items-center font-bold text-lg text-orange-400 mt-3 border-l-2 border-orange-400 p-2">
+          <p className="flex items-center font-bold text-lg text-sky-400 mt-3 border-l-2 border-sky-400 p-2">
             <FaEnvelope className="text-white me-2"></FaEnvelope>
             foodcity01@gmail.com
           </p>
