@@ -17,7 +17,7 @@ const ChefRecipe = ({ recipe }) => {
 
   return (
     <div className="border-2 border-sky-400 rounded mt-10  hover:bg-sky-600 hover:bg-opacity-20 duration-500">
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div className="w-full">
           <img src={img} alt="" className=" w-full h-full p-4" />
         </div>
@@ -40,7 +40,7 @@ const ChefRecipe = ({ recipe }) => {
             Ratings
           </p>
           <div className="flex justify-between items-center">
-            <div className="flex flex-grow items-center">
+            <div className="flex items-center flex-row md:flex-col">
               <p>
                 <Rating
                   initialRating={rating}

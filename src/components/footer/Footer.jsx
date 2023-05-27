@@ -5,11 +5,11 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
-
+import "./footer.css";
 const Footer = () => {
   return (
     <div className="bg-slate-300 mt-20">
-      <footer className="footer p-10 bg-black text-white">
+      <footer className="footer p-10 bg-black text-white footer-style">
         <div>
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>

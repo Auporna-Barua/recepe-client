@@ -8,7 +8,7 @@ import Login from "../pages/Login/Login";
 import Registration from "../pages/registration/Registration";
 import About from "../pages/About/About";
 import Blog from "../pages/Blog/Blog";
-// import PrivetRoute from "./PrivetRoute";
+import PrivetRoute from "./PrivateRoutes";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,9 +24,9 @@ const router = createBrowserRouter([
   {
     path: "/recipes/:id",
     element: (
-      // <PrivetRoute>
-      <ChefRecipe></ChefRecipe>
-      // </PrivetRoute>
+      <PrivetRoute>
+        <ChefRecipe></ChefRecipe>
+      </PrivetRoute>
     ),
     loader: ({ params }) =>
       fetch(

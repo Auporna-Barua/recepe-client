@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
@@ -8,7 +8,11 @@ import Footer from "../../components/footer/Footer";
 
 const Registration = () => {
   const [error, setError] = useState("");
+  const [errorPass, setErrorPass] = useState("");
   const { createNewUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -23,6 +27,8 @@ const Registration = () => {
         const user = result.user;
         console.log(user);
         updateUser(result.user, name, photo);
+        navigate(from, { replace: true });
+
         form.reset();
         setError("");
         toast("New User Created");
@@ -41,6 +47,15 @@ const Registration = () => {
       });
   };
 
+  const handlePass = (e) => {
+    const pass = e.target.value;
+    console.log(pass);
+    if (pass.length < 6) {
+      setErrorPass("Enter Password at least 6 character.");
+    } else {
+      setErrorPass("");
+    }
+  };
   return (
     <div>
       <Navbar></Navbar>
@@ -98,7 +113,9 @@ const Registration = () => {
             id=""
             placeholder="Enter your password"
             required
+            onChange={(e) => handlePass(e)}
           />
+          <p className="text-red-600 font-bold mt-3">{errorPass}</p>
         </div>
         <div className="flex">
           <input
@@ -112,7 +129,10 @@ const Registration = () => {
         </div>
         <p className="text-red-600 font-bold mt-3">{error}</p>
         <div className="text-center">
-          <button className="btn w-full bg-sky-400 font-bold hover:bg-sky-400 border-none mt-5">
+          <button
+            className="btn w-full bg-sky-400 font-bold hover:bg-sky-400 border-none mt-5"
+            disabled={errorPass ? true : false}
+          >
             Register
           </button>
           <p className="font-bold text-xl">or</p>

@@ -34,8 +34,8 @@ const Home = () => {
 
   return (
     <div>
-      <div>
-        <img className="lg:w-full lg:h-3/4 relative" src={bannerImg} alt="" />
+      <div className="h-screen">
+        <img className="w-full h-screen  relative" src={bannerImg} alt="" />
         <div className="absolute lg:top-52 top-72 lg:left-16 left-10">
           <p className="font-bold lg:text-6xl text-3xl leading-tight">
             <span className="text-sky-400">choose</span> better Food <br />
@@ -102,8 +102,8 @@ const Home = () => {
           Contact Us
         </p>
 
-        <div className=" lg:p-5 px-5 bg-sky-400 bg-opacity-25  w-full lg:mx-auto mt-10 ">
-          <div className="w-6/12 mx-auto flex flex-col">
+        <div className=" lg:p-5 px-5 bg-sky-400 bg-opacity-25  w-full lg:mx-auto mt-10 py-10">
+          <div className="w-full sm:w-6/12 mx-auto flex flex-col">
             <input
               type="email"
               placeholder="Your Full Name"
