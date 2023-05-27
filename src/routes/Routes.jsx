@@ -6,6 +6,8 @@ import ChefRecipe from "../pages/ChefRecefies/ChefRecipes";
 import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/registration/Registration";
+import About from "../pages/About/About";
+import Blog from "../pages/Blog/Blog";
 // import PrivetRoute from "./PrivetRoute";
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Registration></Registration>,
+  },
+  {
+    path: "/about",
+    element: <About></About>,
+  },
+  {
+    path: "/blog",
+    element: <Blog></Blog>,
   },
 ]);
 
