@@ -5,6 +5,7 @@ import ChefRecipe from "../pages/ChefRecefies/ChefRecipes";
 
 import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login/Login";
+import Registration from "../pages/registration/Registration";
 // import PrivetRoute from "./PrivetRoute";
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login></Login>,
+  },
+  {
+    path: "/register",
+    element: <Registration></Registration>,
   },
 ]);
 

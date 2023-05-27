@@ -77,13 +77,13 @@ const Navbar = () => {
         {user ? (
           <button
             onClick={handleLogOut}
-            className="bg-sky-400 font-bold text-black btn border-none text-lg rounded hover:bg-sky-400"
+            className="bg-sky-400 font-bold text-white btn border-none text-lg rounded hover:bg-sky-400"
           >
             logOut
           </button>
         ) : (
           <Link to={"/login"}>
-            <button className="bg-sky-400 font-bold text-black btn border-none text-lg rounded hover:bg-sky-400">
+            <button className="bg-sky-400 font-bold text-white btn border-none text-lg rounded hover:bg-sky-400">
               login
             </button>
           </Link>
