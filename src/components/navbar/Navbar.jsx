@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-
+import logo from "../../assets/logo.jpg";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
@@ -12,13 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="lg:flex lg:justify-between lg:items-center lg:px-8 p-3 lg:p-0 lg:py-3 border-b-2 border-sky-400 mb-4">
+    <div className="lg:flex lg:justify-between lg:items-center lg:px-8 p-3 lg:p-0 lg:py-3 border-b-2 border-sky-400 ">
       <Link to={"/"}>
         <p>
           <span className="text-5xl font-bold">
-            F<span className="font-extrabold text-sky-400">oo</span>d
+            Hea<span className="font-extrabold text-sky-400">lth</span>y
           </span>
-          <span className="text-2xl">City</span>
+          <span className="text-2xl">Food</span>
         </p>
       </Link>
 

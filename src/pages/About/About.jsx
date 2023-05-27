@@ -6,7 +6,7 @@ const About = () => {
     <div>
       <Navbar></Navbar>
       <div>
-        <h2 className="font-bold text-4xl border-b-4 border-orange-400 w-fit mx-8 mt-5">
+        <h2 className="font-bold text-4xl border-b-4 border-sky-400 w-fit mx-8 mt-5">
           Who We Are
         </h2>
         <p className="font-semibold text-lg mt-5 px-8 py-2 leading-loose">

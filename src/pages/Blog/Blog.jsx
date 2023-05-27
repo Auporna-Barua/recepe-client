@@ -17,7 +17,7 @@ const Blog = () => {
             <div className="text-center">
               <button
                 onClick={toPdf}
-                className="btn bg-orange-400 hover:bg-orange-400 border-none font-lg font-bold"
+                className="btn bg-sky-400 hover:bg-sky-400 border-none font-lg font-bold"
               >
                 Generate Pdf <FaArrowDown className="ms-3"></FaArrowDown>
               </button>
@@ -36,7 +36,7 @@ const Blog = () => {
             <br /> <span className="font-bold">Control Component:</span> A
             Controlled Component is one that takes its current value through
             props and notifies changes through callbacks like onChange. A parent
-            component "controls" it by handling the callback and managing its
+            component 'controls' it by handling the callback and managing its
             own state and passing the new values as props to the controlled
             component. <br />
             <span className="font-bold mt-2">uncontrolled Component:</span> A
