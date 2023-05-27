@@ -1,4 +1,4 @@
-import img from "../../assets/confused-woman-have-error-message-computer_160308-4826.avif";
+import img from "../assets/confused-woman-have-error-message-computer_160308-4826.avif";
 
 const ErrorPage = () => {
   return (
