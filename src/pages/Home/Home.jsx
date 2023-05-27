@@ -62,6 +62,42 @@ const Home = () => {
           </Suspense>
         </div>
       </div>
+      <div className="w-11/12 mx-auto">
+        <p className="text-5xl font-bold mt-10 text-center  border-b-4 border-sky-400 w-fit mx-auto p-3">
+          Reword's
+        </p>
+
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 mt-10 p-3">
+          <div className="border-2 border-sky-400 rounded-lg p-4">
+            <img className="mx-auto w-22" src={img1} alt="" />
+            <p className="font-bold text-3xl text-center my-3">
+              International Cooking <br /> championship
+            </p>
+            <p className="font-semibold text-2xl text-center">
+              12 time's Winner
+            </p>
+          </div>
+          <div className="border-2 border-sky-400 rounded-lg p-4">
+            <img className="mx-auto w-52" src={img2} alt="" />
+            <p className="font-bold text-3xl text-center my-3">
+              National Cooking <br /> championship
+            </p>
+            <p className="font-semibold text-2xl text-center">
+              22 time's Winner
+            </p>
+          </div>
+          <div className="border-2 border-sky-400 rounded-lg p-4">
+            <img className="mx-auto w-56" src={img3} alt="" />
+            <p className="font-bold text-3xl text-center my-3">
+              American Cooking <br /> championship
+            </p>
+            <p className="font-semibold text-2xl text-center">
+              5 time's Winner
+            </p>
+          </div>
+        </div>
+      </div>
+     
     </div>
   );
 };

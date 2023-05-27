@@ -63,7 +63,7 @@ const Login = () => {
             Email address
           </label>
           <input
-            className="bg-gray-100 p-3 mt-3 rounded-md"
+            className="bg-gray-100 p-3 mt-3 rounded-lg"
             type="email"
             name="email"
             id=""
