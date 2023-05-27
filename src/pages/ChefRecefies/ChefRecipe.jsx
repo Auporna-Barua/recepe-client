@@ -10,7 +10,10 @@ const ChefRecipe = ({ recipe }) => {
   const [disabled, setDisable] = useState(false);
   const { cooking_mathod, img, ingredients, rating, recipe_name } = recipe;
 
- 
+  const handleFavorite = () => {
+    setDisable(!disabled);
+    toast("Add on favorite list ❤");
+  };
 
   return (
     <div className="border-2 border-orange-400 rounded mt-10  hover:bg-orange-400 hover:bg-opacity-20 duration-500">
