@@ -1,14 +1,13 @@
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, Suspense, lazy } from "react";
 import bannerImg from "../../assets/lunchcopy.jpg";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 
-// const ChefDetails = lazy(() => import("./SingleChef/ChefDetails"));
+const ChefDetails = lazy(() => import("../../components/SingleChef/Chef"));
 
 import img1 from "../../assets/world-food-championships-fb-icon.png";
 import img2 from "../../assets/images.png";
 import img3 from "../../assets/WCA_Logo_Circle_TEST.jpg";
-import ChefDetails from "../../components/SingleChef/Chef";
 
 const Home = () => {
   const [chefs, SetChefs] = useState([]);
